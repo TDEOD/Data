@@ -12,7 +12,37 @@
         "fields": [
           {
             "name": "Year",
-            "type": "number"
+            "type": "integer"
+          },
+          {
+            "name": "Series",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Indicator 17.1.1 Total Government Revenue as a Proportion of GDP",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Frequency",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "NATIONAL",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Percentage (%)",
+                ""
+              ]
+            }
           },
           {
             "name": "Value",
